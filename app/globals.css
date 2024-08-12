@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css or any relevant CSS file */
+.perspective {
+  perspective: 1000px;
+}
+
+.relative {
+  transform-style: preserve-3d;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: rotateY(15deg) scale(1.1);
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
