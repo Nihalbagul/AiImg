@@ -2,6 +2,17 @@
 // import { UserAuth } from '../context/AuthContext';
 // import { checkRateLimit, updateRateLimit, saveGenerationHistory, getGenerationHistory } from '../lib/ratelimit';
 // import { useRouter } from 'next/router';
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>
+      generate
+    </div>
+  )
+}
+
+export default page
 
 // const GenerationPage = () => {
 //   const { user } = UserAuth();

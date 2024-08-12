@@ -3,6 +3,17 @@
 // import { useRouter } from 'next/router';
 // import { UserAuth } from '../context/AuthContext';
 // import { getGenerationHistory } from '../lib/ratelimit';
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>
+      profile
+    </div>
+  )
+}
+
+export default page
 
 // const ProfilePage = () => {
 //   const { user, logout } = UserAuth(); // Assuming you have a logout function in your Auth context
