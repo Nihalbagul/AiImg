@@ -76,7 +76,7 @@ export const updateUserRateLimit = async (userId) => {
 export const canGenerateImage = async (userId) => {
   try {
     const rateLimit = await getUserRateLimit(userId);
-    return rateLimit.count < 30;
+    return rateLimit.count < 3;
   } catch (error) {
     console.error('Error checking rate limit:', error);
     return false;
