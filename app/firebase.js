@@ -1,16 +1,16 @@
-// Import the functions you need from the SDKs you need
+// lib/firebase.js
+
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-import {getAuth} from "firebase/auth"
-// Your web app's Firebase configuration
+import { getAuth } from "firebase/auth";
+
+// Your web app's Firebase configuration from environment variables
 const firebaseConfig = {
-  apiKey: "AIzaSyDvucJRpOyBK10olxyhfwWTdqtA84KX7KA",
-  authDomain: "auth-ecf8a.firebaseapp.com",
-  projectId: "auth-ecf8a",
-  storageBucket: "auth-ecf8a.appspot.com",
-  messagingSenderId: "613674723622",
-  appId: "1:613674723622:web:4193c62892a26a1df679e7"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase

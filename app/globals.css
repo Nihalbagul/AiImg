@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css or a relevant CSS module */
+
+/* styles/globals.css or a relevant CSS module */
+
+/* styles/globals.css or a relevant CSS module */
+
+/* styles/globals.css or a relevant CSS module */
+
+/* styles/globals.css or a relevant CSS module */
+
+/* styles/globals.css or a relevant CSS module */
+
+.text-3d {
+  font-size: 1.25rem; /* Adjust size as needed */
+  font-weight: bold;
+  color: #ffffff; /* Main text color */
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(45deg, #ff6f61, #d8a7b1); /* Gradient background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8), /* Darker shadow for contrast */
+    4px 4px 6px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.5px; /* Adjust spacing between letters */
+  text-transform: uppercase; /* Capitalize text */
+}
+
+.text-3d::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 2px; /* Adjusted for better effect */
+  left: 2px;
+  color: #ffcc00; /* Light color for secondary shadow effect */
+  z-index: -1;
+  transform: translateZ(0);
+}
+
+
+
+
 /* styles/globals.css or any relevant CSS file */
 .perspective {
   perspective: 1000px;

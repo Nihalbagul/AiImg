@@ -9,19 +9,95 @@ const ExplorePage = () => {
   // Define images for all 10 tabs
   const images = {
     Rising: [
-      '/image/1.jpeg', '/image/2.jpeg', '/image/3.jpeg', 
-      '/image/4.png', '/image/5.png', '/image/6.png', 
-      '/image/1.jpeg', '/image/1.jpeg', '/image/3.jpeg'
+      '/image/1.jpeg', '/image/2.jpeg', '/image/3.jpeg',
+      '/image/4.png', '/image/5.png', '/image/6.png',
+      '/image/7.png', '/image/8.png', '/image/9.jpeg',
+      '/image/10.jpeg', '/image/11.png', '/image/12.png',
+      '/image/13.png', '/image/14.png', '/image/15.png',
+      '/image/16.png', '/image/17.jpg', '/image/18.jpeg',
+      '/image/19.png', '/image/20.png'
     ],
-    DailyTheme: ['/image/3.jpeg', '/image/4.png'],
-    Animals: ['/image/5.png', '/image/6.png'],
-    Anime: ['/image/7.jpeg', '/image/8.jpeg'],
-    Fashion: ['/image/9.png', '/image/10.png'],
-    Food: ['/image/11.jpeg', '/image/12.jpeg'],
-    Landscapes: ['/image/13.png', '/image/14.png'],
-    SciFi: ['/image/15.jpeg', '/image/16.jpeg'],
-    Vehicles: ['/image/17.png', '/image/18.png'],
-    MyFeed: ['/image/19.jpeg', '/image/20.jpeg'],
+    DailyTheme: [
+      '/image/4.png', '/image/2.jpeg', '/image/7.png',
+      '/image/13.png', '/image/19.png', '/image/15.jpeg',
+      '/image/11.png', '/image/18.jpeg', '/image/9.jpeg',
+      '/image/3.jpeg', '/image/12.png', '/image/10.jpeg',
+      '/image/14.png', '/image/16.png', '/image/5.png',
+      '/image/6.png', '/image/8.png', '/image/1.jpeg',
+      '/image/20.png', '/image/17.jpg'
+    ],
+    Animals: [
+      '/image/6.png', '/image/1.jpeg', '/image/17.jpg',
+      '/image/11.png', '/image/19.png', '/image/13.png',
+      '/image/5.png', '/image/15.jpeg', '/image/10.jpeg',
+      '/image/18.jpeg', '/image/3.jpeg', '/image/20.png',
+      '/image/14.png', '/image/8.png', '/image/4.png',
+      '/image/7.png', '/image/12.png', '/image/2.jpeg',
+      '/image/16.png', '/image/9.jpeg'
+    ],
+    Anime: [
+      '/image/2.jpeg', '/image/11.png', '/image/19.png',
+      '/image/6.png', '/image/16.png', '/image/13.png',
+      '/image/18.jpeg', '/image/8.png', '/image/4.png',
+      '/image/15.jpeg', '/image/1.jpeg', '/image/14.png',
+      '/image/10.jpeg', '/image/5.png', '/image/20.png',
+      '/image/12.png', '/image/3.jpeg', '/image/7.png',
+      '/image/9.jpeg', '/image/17.jpg'
+    ],
+    Fashion: [
+      '/image/8.png', '/image/13.png', '/image/10.jpeg',
+      '/image/19.png', '/image/7.png', '/image/15.jpeg',
+      '/image/12.png', '/image/16.png', '/image/5.png',
+      '/image/20.png', '/image/1.jpeg', '/image/18.jpeg',
+      '/image/4.png', '/image/11.png', '/image/6.png',
+      '/image/14.png', '/image/3.jpeg', '/image/9.jpeg',
+      '/image/17.jpg', '/image/2.jpeg'
+    ],
+    Food: [
+      '/image/7.png', '/image/11.png', '/image/3.jpeg',
+      '/image/16.png', '/image/12.png', '/image/19.png',
+      '/image/14.png', '/image/1.jpeg', '/image/5.png',
+      '/image/6.png', '/image/10.jpeg', '/image/17.jpg',
+      '/image/18.jpeg', '/image/20.png', '/image/15.jpeg',
+      '/image/9.jpeg', '/image/2.jpeg', '/image/8.png',
+      '/image/13.png', '/image/4.png'
+    ],
+    Landscapes: [
+      '/image/14.png', '/image/2.jpeg', '/image/5.png',
+      '/image/8.png', '/image/15.jpeg', '/image/12.png',
+      '/image/1.jpeg', '/image/17.jpg', '/image/13.png',
+      '/image/16.png', '/image/11.png', '/image/6.png',
+      '/image/10.jpeg', '/image/4.png', '/image/18.jpeg',
+      '/image/19.png', '/image/9.jpeg', '/image/20.png',
+      '/image/7.png', '/image/3.jpeg'
+    ],
+    SciFi: [
+      '/image/17.jpg', '/image/12.png', '/image/4.png',
+      '/image/1.jpeg', '/image/6.png', '/image/14.png',
+      '/image/16.png', '/image/3.jpeg', '/image/19.png',
+      '/image/15.jpeg', '/image/13.png', '/image/10.jpeg',
+      '/image/7.png', '/image/2.jpeg', '/image/8.png',
+      '/image/18.jpeg', '/image/20.png', '/image/11.png',
+      '/image/5.png', '/image/9.jpeg'
+    ],
+    Vehicles: [
+      '/image/15.jpeg', '/image/17.jpg', '/image/11.png',
+      '/image/19.png', '/image/1.jpeg', '/image/6.png',
+      '/image/10.jpeg', '/image/13.png', '/image/4.png',
+      '/image/18.jpeg', '/image/14.png', '/image/2.jpeg',
+      '/image/20.png', '/image/12.png', '/image/7.png',
+      '/image/8.png', '/image/16.png', '/image/9.jpeg',
+      '/image/3.jpeg', '/image/5.png'
+    ],
+    MyFeed: [
+      '/image/4.png', '/image/6.png', '/image/1.jpeg',
+      '/image/12.png', '/image/19.png', '/image/13.png',
+      '/image/10.jpeg', '/image/11.png', '/image/3.jpeg',
+      '/image/7.png', '/image/17.jpg', '/image/8.png',
+      '/image/16.png', '/image/20.png', '/image/2.jpeg',
+      '/image/18.jpeg', '/image/5.png', '/image/14.png',
+      '/image/15.jpeg', '/image/9.jpeg'
+    ],
   };
 
   // Render images based on the selected tab
